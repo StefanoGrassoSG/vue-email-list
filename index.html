@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Vue Email List</title>
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
         <!--VUE-->
@@ -14,7 +14,11 @@
     <body>
         
         <div id="app" class="container">
-
+            <ul v-if="mail.length == 10"> 
+                <li v-for="singleMail in mail">
+                    {{ singleMail }}
+                </li>
+            </ul>
         </div>
 
 
